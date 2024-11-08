@@ -1,6 +1,6 @@
 function encode(string)
 
-    local buffer = ""
+    local encodedString = ""
     local onString = false
 
     for charIndex = 1, string:len() do
@@ -14,9 +14,9 @@ function encode(string)
 
         if onString or not onString and currentChar ~= " " then
 
-            buffer = buffer .. currentChar
+            encodedString = encodedString .. currentChar
         end
     end
 
-    return buffer
+    return encodedString
 end
