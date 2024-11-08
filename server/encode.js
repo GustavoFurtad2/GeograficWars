@@ -1,6 +1,6 @@
 function removeSpaces(string) {
 
-    let buffer = ""
+    let newstring = ""
     let onString = false
 
     for (charIndex in string.length) {
@@ -14,11 +14,11 @@ function removeSpaces(string) {
 
         if (onString || !onString && currentChar != " ") {
 
-            buffer += currentChar
+            newstring += currentChar
         }
     }
 
-    return buffer
+    return newstring
 }
 
 module.exports = {
