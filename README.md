@@ -1,11 +1,8 @@
-# Geografic Attack
+# Geografic Wares
 
-A onlline game devloped using framework Love2d and in server using NodeJS
+A onlline game made using the Love2D framework and NodeJS
 
 # TO-DO LIST:
-  - Create room screen [V]
-  - Disconnect screen [V]
-  - Window resize(using screen size) [X]
-  - Login and register [X]
+  - User system [X]
   - Gameplay [X]
-
+  - Mobile [X]
