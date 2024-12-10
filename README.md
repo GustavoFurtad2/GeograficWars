@@ -1,4 +1,4 @@
-# Geografic Wares
+# Geografic Wars
 
 A onlline game made using the Love2D framework and NodeJS
 
