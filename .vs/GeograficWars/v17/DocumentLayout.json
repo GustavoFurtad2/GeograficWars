@@ -7,27 +7,27 @@
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|c:\\dev\\geograficwars\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|C:\\Dev\\GeograficWars\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|c:\\dev\\geograficwars\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|C:\\Dev\\GeograficWars\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|c:\\dev\\geograficwars\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|C:\\Dev\\GeograficWars\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|c:\\dev\\geograficwars\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|C:\\Dev\\GeograficWars\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|c:\\dev\\geograficwars\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|C:\\Dev\\GeograficWars\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|c:\\dev\\geograficwars\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|C:\\Dev\\GeograficWars\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{13FED0D7-A478-4BAD-B298-911A5795924A}|GeograficWars.csproj|solutionrelative:_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -54,8 +54,7 @@
               "RelativeToolTip": "Layout\\MainLayout.razor.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-15T18:23:22.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T18:23:22.563Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "wwwroot\\css\\app.css",
               "ViewState": "AQIAAFsAAAAAAAAAAAAAAGkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-15T18:17:10.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T18:17:10.954Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "Layout\\MainLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-15T18:11:24.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T18:11:24.291Z"
             },
             {
               "$type": "Document",
@@ -93,8 +90,7 @@
               "RelativeToolTip": "App.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-15T18:07:12.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T18:07:12.105Z"
             },
             {
               "$type": "Document",
@@ -106,8 +102,7 @@
               "RelativeToolTip": "_Imports.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-15T18:07:11.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T18:07:11.448Z"
             },
             {
               "$type": "Document",
@@ -117,7 +112,7 @@
               "RelativeDocumentMoniker": "wwwroot\\index.html",
               "ToolTip": "C:\\Dev\\GeograficWars\\wwwroot\\index.html",
               "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-15T18:07:04.951Z",
               "EditorCaption": ""
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Pages\\Index.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-15T18:06:50.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T18:06:50.79Z"
             }
           ]
         }
