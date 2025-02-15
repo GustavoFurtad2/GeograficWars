@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeograficWars", "GeograficWars.csproj", "{13FED0D7-A478-4BAD-B298-911A5795924A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13FED0D7-A478-4BAD-B298-911A5795924A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13FED0D7-A478-4BAD-B298-911A5795924A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13FED0D7-A478-4BAD-B298-911A5795924A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13FED0D7-A478-4BAD-B298-911A5795924A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B704D51A-31E2-4BA7-8A53-3702645775CF}
+	EndGlobalSection
+EndGlobal
