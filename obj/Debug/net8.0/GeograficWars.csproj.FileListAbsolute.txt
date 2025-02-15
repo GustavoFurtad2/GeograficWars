@@ -1849,7 +1849,6 @@ C:\Dev\GeograficWars\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargetin
 C:\Dev\GeograficWars\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GeograficWars.props
 C:\Dev\GeograficWars\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Dev\GeograficWars\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-C:\Dev\GeograficWars\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\Dev\GeograficWars\obj\Debug\net8.0\scopedcss\bundle\GeograficWars.styles.css
 C:\Dev\GeograficWars\obj\Debug\net8.0\scopedcss\projectbundle\GeograficWars.bundle.scp.css
 C:\Dev\GeograficWars\obj\Debug\net8.0\compressed\20mf91ef6p.gz
