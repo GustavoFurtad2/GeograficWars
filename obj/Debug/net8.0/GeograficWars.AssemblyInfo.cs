@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeograficWars")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fd96b81116f8ef19f270cb123504489a93a9e22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76d4818c43734ede07ec498f506e5caa5f74eff6")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeograficWars")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeograficWars")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
