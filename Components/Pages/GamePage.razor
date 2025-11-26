@@ -1,0 +1,54 @@
+﻿@page "/game"
+@rendermode InteractiveServer
+
+@using Excubo.Blazor.Canvas
+@using Excubo.Blazor.Canvas.Contexts
+@using GeograficWars.Game
+@using Microsoft.JSInterop
+
+@inject IJSRuntime JS
+
+<PageTitle>Game</PageTitle>
+<Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;"/>
+
+
+@code {
+
+    private Canvas? canvas;
+    private Game? game;
+
+    private double canvasWidth;
+    private double canvasHeight;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+        {
+            return;
+        }
+
+        game = new Game(JS);
+
+        var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
+
+        canvasWidth = windowSize.Width;
+        canvasHeight = windowSize.Height;
+
+        await game.InitializeAsync(canvas!, windowSize);
+
+        await game.DrawAsync();
+
+        await RenderLoop();
+    }
+
+    private async Task RenderLoop()
+    {
+        while (true)
+        {
+            await game!.DrawAsync();
+            await InvokeAsync(StateHasChanged);
+            await Task.Delay(16);
+        }
+    }
+
+}
