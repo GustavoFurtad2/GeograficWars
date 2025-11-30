@@ -30,7 +30,7 @@ namespace GeograficWars.Game
             ctx = await canvasRef.GetContext2DAsync();
         }
 
-        public async Task DrawAsync()
+        public async Task Draw()
         {
             if (ctx == null)
             {

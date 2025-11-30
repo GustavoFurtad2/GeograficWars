@@ -36,7 +36,7 @@
 
         await game.InitializeAsync(canvas!, windowSize);
 
-        await game.DrawAsync();
+        await game.Draw();
 
         await RenderLoop();
     }
@@ -45,7 +45,7 @@
     {
         while (true)
         {
-            await game!.DrawAsync();
+            await game!.Draw();
             await InvokeAsync(StateHasChanged);
             await Task.Delay(16);
         }
