@@ -39,7 +39,7 @@ namespace GeograficWars.Game
 
             await using var batch = ctx.CreateBatch();
 
-            await batch.FillStyleAsync("lightblue");
+            await batch.FillStyleAsync("dodgerblue");
             await batch.FillRectAsync(0, 0, Width, Height);
         }
     }
