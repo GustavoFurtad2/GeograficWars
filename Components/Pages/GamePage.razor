@@ -11,6 +11,7 @@
 <PageTitle>Game</PageTitle>
 <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;"/>
 
+<img id="brazil" src="countries/brasil.svg" style="display: none;" />
 
 @code {
 
@@ -27,7 +28,7 @@
             return;
         }
 
-        game = new Game(JS);
+        game = new Game();
 
         var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
 
@@ -36,7 +37,7 @@
 
         await game.InitializeAsync(canvas!, windowSize);
 
-        await game.Draw();
+        await game.Render();
 
         await RenderLoop();
     }
@@ -45,7 +46,7 @@
     {
         while (true)
         {
-            await game!.Draw();
+            await game!.Render();
             await InvokeAsync(StateHasChanged);
             await Task.Delay(16);
         }

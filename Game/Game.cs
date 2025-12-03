@@ -2,45 +2,34 @@
 using Excubo.Blazor.Canvas.Contexts;
 using Microsoft.JSInterop;
 using GeograficWars.Game;
+using GeograficWars.Rendering;
 using System.Drawing;
+using System.Text.Json;
 
 namespace GeograficWars.Game
 {
     public class Game
     {
-        private readonly IJSRuntime _js;
-        public double Width { get; private set; }
-        public double Height { get; private set; }
 
-        private Context2D? ctx;
-        private Canvas? canvasRef;
+        private CountryManager countryManager;
+        private GameRenderer renderer;
 
-        public Game(IJSRuntime js)
+        public Game()
         {
-            _js = js;
+            countryManager = new CountryManager();
+            renderer = new GameRenderer();
         }
 
         public async Task InitializeAsync(Canvas canvas, WindowSize size)
         {
-            canvasRef = canvas;
+            countryManager.LoadCountries();
 
-            Width = size.Width;
-            Height = size.Height;
-
-            ctx = await canvasRef.GetContext2DAsync();
+            await renderer.InitializeAsync(canvas, size, countryManager);
         }
 
-        public async Task Draw()
+        public async Task Render()
         {
-            if (ctx == null)
-            {
-                return;
-            }
-
-            await using var batch = ctx.CreateBatch();
-
-            await batch.FillStyleAsync("dodgerblue");
-            await batch.FillRectAsync(0, 0, Width, Height);
+            await renderer.Render();
         }
     }
 }
