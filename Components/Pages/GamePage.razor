@@ -11,15 +11,24 @@
 <PageTitle>Game</PageTitle>
 <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;"/>
 
-<img id="brazil" src="countries/brasil.svg" style="display: none;" />
+@foreach (Country country in countryManager.Countries)
+{
+    <img id="@country.Id" src="countries/@country.ImagePath" style="display: none;" />
+}
 
 @code {
 
+    private CountryManager countryManager = new CountryManager();
     private Canvas? canvas;
     private Game? game;
 
     private double canvasWidth;
     private double canvasHeight;
+
+    protected override void OnInitialized()
+    {
+        countryManager.LoadCountries();
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -28,7 +37,7 @@
             return;
         }
 
-        game = new Game();
+        game = new Game(countryManager);
 
         var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
 

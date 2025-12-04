@@ -11,25 +11,23 @@ namespace GeograficWars.Game
     public class Game
     {
 
-        private CountryManager countryManager;
-        private GameRenderer renderer;
+        private CountryManager _countryManager;
+        private GameRenderer _renderer;
 
-        public Game()
+        public Game(CountryManager countryManager)
         {
-            countryManager = new CountryManager();
-            renderer = new GameRenderer();
+            _countryManager = countryManager;
+            _renderer = new GameRenderer();
         }
 
         public async Task InitializeAsync(Canvas canvas, WindowSize size)
         {
-            countryManager.LoadCountries();
-
-            await renderer.InitializeAsync(canvas, size, countryManager);
+            await _renderer.InitializeAsync(canvas, size, _countryManager);
         }
 
         public async Task Render()
         {
-            await renderer.Render();
+            await _renderer.Render();
         }
     }
 }

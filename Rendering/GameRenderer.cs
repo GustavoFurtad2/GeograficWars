@@ -2,6 +2,7 @@
 using Excubo.Blazor.Canvas;
 using GeograficWars.Game;
 using System.Drawing;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace GeograficWars.Rendering
 {
@@ -51,12 +52,19 @@ namespace GeograficWars.Rendering
         private async Task RenderCountries(Batch2D batch)
         {
 
-            await batch.SaveAsync();
-            await batch.ScaleAsync(0.25, 0.25);
-
-            await batch.DrawImageAsync("brazil", 0, 0);
-            await batch.RestoreAsync();
+            foreach (var country in _countryManager.Countries)
+            {
+                await DrawCountry(batch, country);
+            }
         }
 
+        private async Task DrawCountry(Batch2D batch, Country country)
+        {
+            await batch.SaveAsync();
+            await batch.ScaleAsync(country.Scale, country.Scale);
+
+            await batch.DrawImageAsync(country.Id, Width * country.X, Height * country.Y);
+            await batch.RestoreAsync();
+        }
     }
 }
