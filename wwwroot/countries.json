@@ -1,749 +1,848 @@
 [
   {
-    "id": "afghanistan",
-    "displayname": "Afeganistão",
-    "continent": "Ásia",
-    "path": "afeganistao.svg",
-    "x": 0.6881,
-    "y": 0.3114,
-    "scale": 0.0605
+    "id": "canada",
+    "displayname": "Canadá",
+    "continent": "América",
+    "path": "canada.svg",
+    "x": 0.3,
+    "y": 0.1,
+    "scale": 0.3
   },
   {
-    "id": "south_africa",
-    "displayname": "África do Sul",
-    "continent": "África",
-    "path": "africaDoSul.svg",
-    "x": 0.5637,
-    "y": 0.6698,
-    "scale": 0.0468
+    "id": "united_states",
+    "displayname": "Estados Unidos",
+    "continent": "América",
+    "path": "estadosUnidos.svg",
+    "x": 0.31,
+    "y": 0.9,
+    "scale": 0.3
   },
   {
-    "id": "germany",
-    "displayname": "Alemanha",
-    "continent": "Europa",
-    "path": "alemanha.svg",
-    "x": 0.529,
-    "y": 0.2157,
-    "scale": 0.027
-  },
-  {
-    "id": "angola",
-    "displayname": "Angola",
-    "continent": "África",
-    "path": "angola.svg",
-    "x": 0.5496,
-    "y": 0.5622,
-    "scale": 0.0468
-  },
-  {
-    "id": "saudi_arabia",
-    "displayname": "Arábia Saudita",
-    "continent": "Ásia",
-    "path": "arabiaSaudita.svg",
-    "x": 0.6252,
-    "y": 0.3673,
-    "scale": 0.0605
-  },
-  {
-    "id": "argentina",
-    "displayname": "Argentina",
-    "continent": "América do Sul",
-    "path": "argentina.svg",
-    "x": 0.3233,
-    "y": 0.7134,
-    "scale": 0.1008
-  },
-  {
-    "id": "algeria",
-    "displayname": "Argélia",
-    "continent": "África",
-    "path": "argelia.svg",
-    "x": 0.5046,
-    "y": 0.3443,
-    "scale": 0.0468
-  },
-  {
-    "id": "armenia",
-    "displayname": "Armênia",
-    "continent": "Ásia",
-    "path": "armenia.svg",
-    "x": 0.6251,
-    "y": 0.2774,
-    "scale": 0.0605
+    "id": "brazil",
+    "displayname": "Brasil",
+    "continent": "América",
+    "path": "brasil.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "australia",
     "displayname": "Austrália",
     "continent": "Oceania",
     "path": "australia.svg",
-    "x": 0.8716,
-    "y": 0.6404,
-    "scale": 0.1677
-  },
-  {
-    "id": "austria",
-    "displayname": "Áustria",
-    "continent": "Europa",
-    "path": "austria.svg",
-    "x": 0.5404,
-    "y": 0.236,
-    "scale": 0.027
-  },
-  {
-    "id": "azerbaijan",
-    "displayname": "Azerbaijão",
-    "continent": "Ásia",
-    "path": "azerbaijao.svg",
-    "x": 0.6322,
-    "y": 0.277,
-    "scale": 0.0605
-  },
-  {
-    "id": "bangladesh",
-    "displayname": "Bangladesh",
-    "continent": "Ásia",
-    "path": "bangladesh.svg",
-    "x": 0.751,
-    "y": 0.3684,
-    "scale": 0.0605
-  },
-  {
-    "id": "belgium",
-    "displayname": "Bélgica",
-    "continent": "Europa",
-    "path": "belgica.svg",
-    "x": 0.5124,
-    "y": 0.2194,
-    "scale": 0.027
-  },
-  {
-    "id": "benin",
-    "displayname": "Benim",
-    "continent": "África",
-    "path": "benin.svg",
-    "x": 0.5064,
-    "y": 0.4483,
-    "scale": 0.0468
-  },
-  {
-    "id": "belarus",
-    "displayname": "Bielorrússia",
-    "continent": "Europa",
-    "path": "bielorussia.svg",
-    "x": 0.5776,
-    "y": 0.2016,
-    "scale": 0.027
-  },
-  {
-    "id": "bolivia",
-    "displayname": "Bolívia",
-    "continent": "América do Sul",
-    "path": "bolivia.svg",
-    "x": 0.3234,
-    "y": 0.5905,
-    "scale": 0.0574
-  },
-  {
-    "id": "botswana",
-    "displayname": "Botsuana",
-    "continent": "África",
-    "path": "botsuana.svg",
-    "x": 0.5686,
-    "y": 0.624,
-    "scale": 0.0468
-  },
-  {
-    "id": "brazil",
-    "displayname": "Brasil",
-    "continent": "América do Sul",
-    "path": "brasil.svg",
-    "x": 0.3558,
-    "y": 0.5791,
-    "scale": 0.1764
-  },
-  {
-    "id": "bulgaria",
-    "displayname": "Bulgária",
-    "continent": "Europa",
-    "path": "bulgaria.svg",
-    "x": 0.5708,
-    "y": 0.2626,
-    "scale": 0.027
-  },
-  {
-    "id": "burkina_faso",
-    "displayname": "Burquina Faso",
-    "continent": "África",
-    "path": "burkinaFaso.svg",
-    "x": 0.4957,
-    "y": 0.432,
-    "scale": 0.0468
-  },
-  {
-    "id": "burundi",
-    "displayname": "Burundi",
-    "continent": "África",
-    "path": "burundi.svg",
-    "x": 0.5831,
-    "y": 0.5187,
-    "scale": 0.0468
-  },
-  {
-    "id": "cape_verde",
-    "displayname": "Cabo Verde",
-    "continent": "África",
-    "path": "caboVerde.svg",
-    "x": 0.4333,
-    "y": 0.4111,
-    "scale": 0.0468
-  },
-  {
-    "id": "cameroon",
-    "displayname": "Camarões",
-    "continent": "África",
-    "path": "camaroes.svg",
-    "x": 0.5343,
-    "y": 0.4591,
-    "scale": 0.0468
-  },
-  {
-    "id": "cambodia",
-    "displayname": "Camboja",
-    "continent": "Ásia",
-    "path": "cambja.svg",
-    "x": 0.7916,
-    "y": 0.4302,
-    "scale": 0.0605
-  },
-  {
-    "id": "canada",
-    "displayname": "Canadá",
-    "continent": "América do Norte",
-    "path": "canada.svg",
-    "x": 0.2046,
-    "y": 0.1882,
-    "scale": 0.191
-  },
-  {
-    "id": "chad",
-    "displayname": "Chade",
-    "continent": "África",
-    "path": "chade.svg",
-    "x": 0.552,
-    "y": 0.4141,
-    "scale": 0.0468
-  },
-  {
-    "id": "south_korea",
-    "displayname": "Coreia do Sul",
-    "continent": "Ásia",
-    "path": "coreiaDoSul.svg",
-    "x": 0.8549,
-    "y": 0.3005,
-    "scale": 0.0605
-  },
-  {
-    "id": "congo",
-    "displayname": "Congo",
-    "continent": "África",
-    "path": "congo.svg",
-    "x": 0.544,
-    "y": 0.5013,
-    "scale": 0.0468
-  },
-  {
-    "id": "ivory_coast",
-    "displayname": "Costa do Marfim",
-    "continent": "África",
-    "path": "costaDoMarfim.svg",
-    "x": 0.4846,
-    "y": 0.4581,
-    "scale": 0.0468
-  },
-  {
-    "id": "cuba",
-    "displayname": "Cuba",
-    "continent": "América do Norte",
-    "path": "cuba.svg",
-    "x": 0.2839,
-    "y": 0.3804,
-    "scale": 0.0506
-  },
-  {
-    "id": "egypt",
-    "displayname": "Egito",
-    "continent": "África",
-    "path": "egito.svg",
-    "x": 0.5856,
-    "y": 0.351,
-    "scale": 0.0468
-  },
-  {
-    "id": "uae",
-    "displayname": "Emirados Árabes Unidos",
-    "continent": "Ásia",
-    "path": "emiradosArabesUnidos.svg",
-    "x": 0.6496,
-    "y": 0.3699,
-    "scale": 0.0605
-  },
-  {
-    "id": "ecuador",
-    "displayname": "Equador",
-    "continent": "América do Sul",
-    "path": "equador.svg",
-    "x": 0.2828,
-    "y": 0.5102,
-    "scale": 0.0574
-  },
-  {
-    "id": "eritrea",
-    "displayname": "Eritreia",
-    "continent": "África",
-    "path": "eritrea.svg",
-    "x": 0.6105,
-    "y": 0.4157,
-    "scale": 0.0468
-  },
-  {
-    "id": "spain",
-    "displayname": "Espanha",
-    "continent": "Europa",
-    "path": "espanha.svg",
-    "x": 0.4896,
-    "y": 0.2752,
-    "scale": 0.027
-  },
-  {
-    "id": "usa",
-    "displayname": "Estados Unidos",
-    "continent": "América do Norte",
-    "path": "estadosUnidos.svg",
-    "x": 0.2341,
-    "y": 0.2939,
-    "scale": 0.1896
-  },
-  {
-    "id": "ethiopia",
-    "displayname": "Etiópia",
-    "continent": "África",
-    "path": "etiopia.svg",
-    "x": 0.6125,
-    "y": 0.4492,
-    "scale": 0.0468
-  },
-  {
-    "id": "philippines",
-    "displayname": "Filipinas",
-    "continent": "Ásia",
-    "path": "filipinas.svg",
-    "x": 0.8383,
-    "y": 0.4284,
-    "scale": 0.0605
-  },
-  {
-    "id": "finland",
-    "displayname": "Finlândia",
-    "continent": "Europa",
-    "path": "finlandia.svg",
-    "x": 0.5715,
-    "y": 0.156,
-    "scale": 0.027
-  },
-  {
-    "id": "france",
-    "displayname": "França",
-    "continent": "Europa",
-    "path": "frança.svg",
-    "x": 0.5061,
-    "y": 0.2432,
-    "scale": 0.027
-  },
-  {
-    "id": "ghana",
-    "displayname": "Gana",
-    "continent": "África",
-    "path": "gana.svg",
-    "x": 0.4972,
-    "y": 0.4559,
-    "scale": 0.0468
-  },
-  {
-    "id": "georgia",
-    "displayname": "Geórgia",
-    "continent": "Ásia/Europa",
-    "path": "georgia.svg",
-    "x": 0.2697,
-    "y": 0.3213,
-    "scale": 0.0331
-  },
-  {
-    "id": "greece",
-    "displayname": "Grécia",
-    "continent": "Europa",
-    "path": "grécia.svg",
-    "x": 0.5606,
-    "y": 0.2829,
-    "scale": 0.027
-  },
-  {
-    "id": "guatemala",
-    "displayname": "Guatemala",
-    "continent": "América Central",
-    "path": "guatemala.svg",
-    "x": 0.2494,
-    "y": 0.4123,
-    "scale": 0.027
-  },
-  {
-    "id": "guinea",
-    "displayname": "Guiné",
-    "continent": "África",
-    "path": "guiné.svg",
-    "x": 0.4731,
-    "y": 0.4447,
-    "scale": 0.0468
-  },
-  {
-    "id": "guinea_bissau",
-    "displayname": "Guiné-Bissau",
-    "continent": "África",
-    "path": "guineBissau.svg",
-    "x": 0.4578,
-    "y": 0.4344,
-    "scale": 0.0468
-  },
-  {
-    "id": "equatorial_guinea",
-    "displayname": "Guiné Equatorial",
-    "continent": "África",
-    "path": "guineEquatorial.svg",
-    "x": 0.5285,
-    "y": 0.4908,
-    "scale": 0.0468
-  },
-  {
-    "id": "haiti",
-    "displayname": "Haiti",
-    "continent": "América do Norte",
-    "path": "haiti.svg",
-    "x": 0.2992,
-    "y": 0.3946,
-    "scale": 0.0506
-  },
-  {
-    "id": "netherlands",
-    "displayname": "Países Baixos",
-    "continent": "Europa",
-    "path": "holanda.svg",
-    "x": 0.5147,
-    "y": 0.2104,
-    "scale": 0.027
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "india",
     "displayname": "Índia",
     "continent": "Ásia",
     "path": "india.svg",
-    "x": 0.7193,
-    "y": 0.3856,
-    "scale": 0.1096
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "japan",
-    "displayname": "Japão",
+    "id": "argentina",
+    "displayname": "Argentina",
+    "continent": "América",
+    "path": "argentina.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "kazakhstan",
+    "displayname": "Cazaquistão",
     "continent": "Ásia",
-    "path": "japao.svg",
-    "x": 0.884,
-    "y": 0.2989,
-    "scale": 0.0605
+    "path": "cazaquistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "jordan",
-    "displayname": "Jordânia",
-    "continent": "Ásia",
-    "path": "jordania.svg",
-    "x": 0.6007,
-    "y": 0.3301,
-    "scale": 0.0605
-  },
-  {
-    "id": "laos",
-    "displayname": "Laos",
-    "continent": "Ásia",
-    "path": "laos.svg",
-    "x": 0.7847,
-    "y": 0.3897,
-    "scale": 0.0605
-  },
-  {
-    "id": "liberia",
-    "displayname": "Libéria",
+    "id": "algeria",
+    "displayname": "Argélia",
     "continent": "África",
-    "path": "libéria.svg",
-    "x": 0.4738,
-    "y": 0.4643,
-    "scale": 0.0468
+    "path": "argelia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "dr_congo",
+    "displayname": "República Democrática do Congo",
+    "continent": "África",
+    "path": "republicaDemocraticaDoCongo.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "saudi_arabia",
+    "displayname": "Arábia Saudita",
+    "continent": "Ásia",
+    "path": "arabiaSaudita.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "mexico",
+    "displayname": "México",
+    "continent": "América",
+    "path": "mexico.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "indonesia",
+    "displayname": "Indonésia",
+    "continent": "Ásia",
+    "path": "indonesia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "sudan",
+    "displayname": "Sudão",
+    "continent": "África",
+    "path": "sudao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "libya",
     "displayname": "Líbia",
     "continent": "África",
     "path": "libia.svg",
-    "x": 0.5479,
-    "y": 0.3537,
-    "scale": 0.0468
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "madagascar",
-    "displayname": "Madagascar",
-    "continent": "África",
-    "path": "madagascar.svg",
-    "x": 0.6302,
-    "y": 0.6043,
-    "scale": 0.0468
-  },
-  {
-    "id": "malaysia",
-    "displayname": "Malásia",
+    "id": "iran",
+    "displayname": "Irã",
     "continent": "Ásia",
-    "path": "malasia.svg",
-    "x": 0.7833,
-    "y": 0.4766,
-    "scale": 0.0605
-  },
-  {
-    "id": "malawi",
-    "displayname": "Malawi",
-    "continent": "África",
-    "path": "malawi.svg",
-    "x": 0.5953,
-    "y": 0.5736,
-    "scale": 0.0468
-  },
-  {
-    "id": "maldives",
-    "displayname": "Maldivas",
-    "continent": "Ásia",
-    "path": "maldivas.svg",
-    "x": 0.7034,
-    "y": 0.4822,
-    "scale": 0.0605
-  },
-  {
-    "id": "morocco",
-    "displayname": "Marrocos",
-    "continent": "África",
-    "path": "marrocos.svg",
-    "x": 0.4803,
-    "y": 0.3234,
-    "scale": 0.0468
-  },
-  {
-    "id": "mauritania",
-    "displayname": "Mauritânia",
-    "continent": "África",
-    "path": "mauritania.svg",
-    "x": 0.4696,
-    "y": 0.3833,
-    "scale": 0.0468
-  },
-  {
-    "id": "mexico",
-    "displayname": "México",
-    "continent": "América do Norte",
-    "path": "mexico.svg",
-    "x": 0.2151,
-    "y": 0.3687,
-    "scale": 0.0506
+    "path": "ira.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "mongolia",
     "displayname": "Mongólia",
     "continent": "Ásia",
     "path": "mongolia.svg",
-    "x": 0.7885,
-    "y": 0.2397,
-    "scale": 0.0605
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "mozambique",
-    "displayname": "Moçambique",
+    "id": "peru",
+    "displayname": "Peru",
+    "continent": "América",
+    "path": "peru.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "chad",
+    "displayname": "Chade",
     "continent": "África",
-    "path": "mocambique.svg",
-    "x": 0.5987,
-    "y": 0.6037,
-    "scale": 0.0468
+    "path": "chade.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "niger",
     "displayname": "Níger",
     "continent": "África",
     "path": "niger.svg",
-    "x": 0.5224,
-    "y": 0.4022,
-    "scale": 0.0468
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "angola",
+    "displayname": "Angola",
+    "continent": "África",
+    "path": "angola.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "mali",
+    "displayname": "Mali",
+    "continent": "África",
+    "path": "mali.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "south_africa",
+    "displayname": "África do Sul",
+    "continent": "África",
+    "path": "africaDoSul.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "colombia",
+    "displayname": "Colômbia",
+    "continent": "América",
+    "path": "colombia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "ethiopia",
+    "displayname": "Etiópia",
+    "continent": "África",
+    "path": "etiopia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "bolivia",
+    "displayname": "Bolívia",
+    "continent": "América",
+    "path": "bolivia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "mauritania",
+    "displayname": "Mauritânia",
+    "continent": "África",
+    "path": "mauritania.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "egypt",
+    "displayname": "Egito",
+    "continent": "África",
+    "path": "egito.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "tanzania",
+    "displayname": "Tanzânia",
+    "continent": "África",
+    "path": "tanzania.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "nigeria",
     "displayname": "Nigéria",
     "continent": "África",
     "path": "nigeria.svg",
-    "x": 0.5241,
-    "y": 0.4495,
-    "scale": 0.0468
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "new_zealand",
-    "displayname": "Nova Zelândia",
-    "continent": "Oceania",
-    "path": "novaZelandia.svg",
-    "x": 0.9858,
-    "y": 0.7272,
-    "scale": 0.027
+    "id": "venezuela",
+    "displayname": "Venezuela",
+    "continent": "América",
+    "path": "venezuela.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "nepal",
-    "displayname": "Nepal",
-    "continent": "Ásia",
-    "path": "nepal.svg",
-    "x": 0.7337,
-    "y": 0.3423,
-    "scale": 0.0605
-  },
-  {
-    "id": "norway",
-    "displayname": "Noruega",
-    "continent": "Europa",
-    "path": "noruega.svg",
-    "x": 0.5235,
-    "y": 0.164,
-    "scale": 0.027
-  },
-  {
-    "id": "oman",
-    "displayname": "Omã",
-    "continent": "Ásia",
-    "path": "omam.svg",
-    "x": 0.6553,
-    "y": 0.3805,
-    "scale": 0.0605
-  },
-  {
-    "id": "paraguay",
-    "displayname": "Paraguai",
-    "continent": "América do Sul",
-    "path": "paraguai.svg",
-    "x": 0.3377,
-    "y": 0.6302,
-    "scale": 0.0574
-  },
-  {
-    "id": "peru",
-    "displayname": "Peru",
-    "continent": "América do Sul",
-    "path": "peru.svg",
-    "x": 0.2916,
-    "y": 0.5511,
-    "scale": 0.0574
-  },
-  {
-    "id": "poland",
-    "displayname": "Polônia",
-    "continent": "Europa",
-    "path": "polônia.svg",
-    "x": 0.5532,
-    "y": 0.2116,
-    "scale": 0.027
-  },
-  {
-    "id": "portugal",
-    "displayname": "Portugal",
-    "continent": "Europa",
-    "path": "portugal.svg",
-    "x": 0.4772,
-    "y": 0.2811,
-    "scale": 0.027
-  },
-  {
-    "id": "kenya",
-    "displayname": "Quênia",
+    "id": "namibia",
+    "displayname": "Namíbia",
     "continent": "África",
-    "path": "quenia.svg",
-    "x": 0.6053,
-    "y": 0.5001,
-    "scale": 0.0468
+    "path": "namibia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "pakistan",
+    "displayname": "Paquistão",
+    "continent": "Ásia",
+    "path": "paquistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "mozambique",
+    "displayname": "Moçambique",
+    "continent": "África",
+    "path": "moçambique.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "turkey",
+    "displayname": "Turquia",
+    "continent": "Ásia",
+    "path": "turquia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "chile",
+    "displayname": "Chile",
+    "continent": "América",
+    "path": "chile.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "zambia",
+    "displayname": "Zâmbia",
+    "continent": "África",
+    "path": "zambia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "myanmar",
+    "displayname": "Mianmar",
+    "continent": "Ásia",
+    "path": "mianmar.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "afghanistan",
+    "displayname": "Afeganistão",
+    "continent": "Ásia",
+    "path": "afeganistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "south_sudan",
+    "displayname": "Sudão do Sul",
+    "continent": "África",
+    "path": "sudaoDoSul.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "france",
+    "displayname": "França",
+    "continent": "Europa",
+    "path": "frança.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "somalia",
+    "displayname": "Somália",
+    "continent": "África",
+    "path": "somalia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "central_african_republic",
     "displayname": "República Centro-Africana",
     "continent": "África",
     "path": "republicaCentroAfricana.svg",
-    "x": 0.5582,
-    "y": 0.4633,
-    "scale": 0.0468
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "united_kingdom",
-    "displayname": "Reino Unido",
+    "id": "ukraine",
+    "displayname": "Ucrânia",
     "continent": "Europa",
-    "path": "reinoUnido.svg",
-    "x": 0.4905,
-    "y": 0.1923,
-    "scale": 0.027
+    "path": "ucrania.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "drc",
-    "displayname": "República Democrática do Congo",
+    "id": "madagascar",
+    "displayname": "Madagascar",
     "continent": "África",
-    "path": "republicaDemocraticaDoCongo.svg",
-    "x": 0.5604,
-    "y": 0.5224,
-    "scale": 0.0468
+    "path": "madagascar.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "russia",
-    "displayname": "Rússia",
-    "continent": "Eurasia",
-    "path": "russia.svg",
-    "x": 0.7926,
-    "y": 0.1582,
-    "scale": 0.25
-  },
-  {
-    "id": "senegal",
-    "displayname": "Senegal",
+    "id": "botswana",
+    "displayname": "Botsuana",
     "continent": "África",
-    "path": "senegal.svg",
-    "x": 0.4599,
-    "y": 0.4195,
-    "scale": 0.0468
+    "path": "botsuana.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "kenya",
+    "displayname": "Quênia",
+    "continent": "África",
+    "path": "quenia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "yemen",
+    "displayname": "Iêmen",
+    "continent": "Ásia",
+    "path": "iemen.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "thailand",
+    "displayname": "Tailândia",
+    "continent": "Ásia",
+    "path": "tailandia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "spain",
+    "displayname": "Espanha",
+    "continent": "Europa",
+    "path": "espanha.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "turkmenistan",
+    "displayname": "Turquemenistão",
+    "continent": "Ásia",
+    "path": "turquemenistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "cameroon",
+    "displayname": "Camarões",
+    "continent": "África",
+    "path": "camaroes.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "papua_new_guinea",
+    "displayname": "Papua-Nova Guiné",
+    "continent": "Oceania",
+    "path": "papuaNovaGuine.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "sweden",
     "displayname": "Suécia",
     "continent": "Europa",
     "path": "suecia.svg",
-    "x": 0.5518,
-    "y": 0.166,
-    "scale": 0.027
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
-    "id": "venezuela",
-    "displayname": "Venezuela",
-    "continent": "América do Sul",
-    "path": "venezuela.svg",
-    "x": 0.315,
-    "y": 0.4643,
-    "scale": 0.0574
+    "id": "uzbekistan",
+    "displayname": "Uzbequistão",
+    "continent": "Ásia",
+    "path": "uzbequistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "morocco",
+    "displayname": "Marrocos",
+    "continent": "África",
+    "path": "marrocos.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "iraq",
+    "displayname": "Iraque",
+    "continent": "Ásia",
+    "path": "iraque.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "paraguay",
+    "displayname": "Paraguai",
+    "continent": "América",
+    "path": "paraguai.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "zimbabwe",
+    "displayname": "Zimbábue",
+    "continent": "África",
+    "path": "zimbabue.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "norway",
+    "displayname": "Noruega",
+    "continent": "Europa",
+    "path": "noruega.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "japan",
+    "displayname": "Japão",
+    "continent": "Ásia",
+    "path": "japao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "germany",
+    "displayname": "Alemanha",
+    "continent": "Europa",
+    "path": "alemanha.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "congo",
+    "displayname": "República do Congo",
+    "continent": "África",
+    "path": "republicaDoCongo.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "finland",
+    "displayname": "Finlândia",
+    "continent": "Europa",
+    "path": "finlandia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   },
   {
     "id": "vietnam",
     "displayname": "Vietnã",
     "continent": "Ásia",
     "path": "vietna.svg",
-    "x": 0.8008,
-    "y": 0.4219,
-    "scale": 0.0605
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "malaysia",
+    "displayname": "Malásia",
+    "continent": "Ásia",
+    "path": "malasia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "ivory_coast",
+    "displayname": "Costa do Marfim",
+    "continent": "África",
+    "path": "costaDoMarfim.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "philippines",
+    "displayname": "Filipinas",
+    "continent": "Ásia",
+    "path": "filipinas.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "poland",
+    "displayname": "Polônia",
+    "continent": "Europa",
+    "path": "polonia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "oman",
+    "displayname": "Omã",
+    "continent": "Ásia",
+    "path": "oma.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "italy",
+    "displayname": "Itália",
+    "continent": "Europa",
+    "path": "italia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "ecuador",
+    "displayname": "Equador",
+    "continent": "América",
+    "path": "equador.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "burkina_faso",
+    "displayname": "Burkina Faso",
+    "continent": "África",
+    "path": "burkinaFaso.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "new_zealand",
+    "displayname": "Nova Zelândia",
+    "continent": "Oceania",
+    "path": "novaZelandia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "gabon",
+    "displayname": "Gabão",
+    "continent": "África",
+    "path": "gabao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "guinea",
+    "displayname": "Guiné",
+    "continent": "África",
+    "path": "guine.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "united_kingdom",
+    "displayname": "Reino Unido",
+    "continent": "Europa",
+    "path": "reinoUnido.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "ghana",
+    "displayname": "Gana",
+    "continent": "África",
+    "path": "gana.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "romania",
+    "displayname": "Romênia",
+    "continent": "Europa",
+    "path": "romenia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "laos",
+    "displayname": "Laos",
+    "continent": "Ásia",
+    "path": "laos.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "uganda",
+    "displayname": "Uganda",
+    "continent": "África",
+    "path": "uganda.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "guyana",
+    "displayname": "Guiana",
+    "continent": "América",
+    "path": "guiana.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "belarus",
+    "displayname": "Bielorrússia",
+    "continent": "Europa",
+    "path": "bielorrussia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "kyrgyzstan",
+    "displayname": "Quirguistão",
+    "continent": "Ásia",
+    "path": "quirguistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "senegal",
+    "displayname": "Senegal",
+    "continent": "África",
+    "path": "senegal.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "syria",
+    "displayname": "Síria",
+    "continent": "Ásia",
+    "path": "siria.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "cambodia",
+    "displayname": "Camboja",
+    "continent": "Ásia",
+    "path": "camboja.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "uruguay",
+    "displayname": "Uruguai",
+    "continent": "América",
+    "path": "uruguai.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "tunisia",
+    "displayname": "Tunísia",
+    "continent": "África",
+    "path": "tunisia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "suriname",
+    "displayname": "Suriname",
+    "continent": "América",
+    "path": "suriname.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "nepal",
+    "displayname": "Nepal",
+    "continent": "Ásia",
+    "path": "nepal.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "bangladesh",
+    "displayname": "Bangladesh",
+    "continent": "Ásia",
+    "path": "bangladesh.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "tajikistan",
+    "displayname": "Tajiquistão",
+    "continent": "Ásia",
+    "path": "tajiquistao.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "greece",
+    "displayname": "Grécia",
+    "continent": "Europa",
+    "path": "grecia.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
+  },
+  {
+    "id": "nicaragua",
+    "displayname": "Nicarágua",
+    "continent": "América",
+    "path": "nicaragua.svg",
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 0.0
   }
 ]
