@@ -12,15 +12,11 @@ namespace GeograficWars.Rendering
         private Context2D? _ctx;
         private Canvas? _canvasRef;
 
-        private CountriesManager _countryManager;
-
         public double Width { get; private set; }
         public double Height { get; private set; }
 
-        public async Task InitializeAsync(Canvas canvas, WindowSize size, CountriesManager countryManager)
+        public async Task InitializeAsync(Canvas canvas, WindowSize size)
         {
-            _countryManager = countryManager;
-
             _canvasRef = canvas;
 
             Width = size.Width;
@@ -29,7 +25,7 @@ namespace GeograficWars.Rendering
             _ctx = await _canvasRef.GetContext2DAsync();
         }
 
-        public async Task Render()
+        public async Task Render(List<Country> countries)
         {
 
             if (_ctx == null)
@@ -40,7 +36,7 @@ namespace GeograficWars.Rendering
             await using Batch2D batch = _ctx.CreateBatch();
 
             await RenderBackground(batch);
-            await RenderCountries(batch);
+            await RenderCountries(batch, countries);
         }
 
         private async Task RenderBackground(Batch2D batch)
@@ -49,10 +45,10 @@ namespace GeograficWars.Rendering
             await batch.FillRectAsync(0, 0, Width, Height);
         }
 
-        private async Task RenderCountries(Batch2D batch)
+        private async Task RenderCountries(Batch2D batch, List<Country> countries)
         {
 
-            foreach (var country in _countryManager.GetCountries())
+            foreach (var country in countries)
             {
                 await DrawCountry(batch, country.GetCountryData());
             }
