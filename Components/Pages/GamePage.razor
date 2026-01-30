@@ -1,4 +1,5 @@
-﻿@page "/game"
+﻿@page "/game/{RoomId?}"
+@inject RoomService RoomService
 @rendermode InteractiveServer
 
 @using Excubo.Blazor.Canvas
@@ -11,7 +12,7 @@
 <PageTitle>Game</PageTitle>
 <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;"/>
 
-@foreach (Country country in game.GetCountriesManager().GetCountries())
+@foreach (Country country in countries)
 {
     CountryData countryData = @country.GetCountryData();
 
@@ -20,9 +21,14 @@
 
 @code {
 
+    [Parameter]
+    public string? RoomId { get; set; }
+
     private List<Country>? countries;
     private Canvas? canvas;
     private Game? game;
+    private Room? room;
+    private CountriesManager? countriesManager;
 
     private double canvasWidth;
     private double canvasHeight;
@@ -31,7 +37,11 @@
     {
         game = new Game();
 
-        countries = game.GetCountriesManager().GetCountries();
+        room = RoomService.CreateRoom(RoomId, "room");
+
+        countriesManager = room.GetCountriesManager();
+
+        countries = countriesManager.GetCountries();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -46,9 +56,7 @@
         canvasWidth = windowSize.Width;
         canvasHeight = windowSize.Height;
 
-        await game.InitializeAsync(canvas!, windowSize);
-
-        await game.Render();
+        await game!.InitializeAsync(canvas!, windowSize);
 
         await RenderLoop();
     }
@@ -57,7 +65,7 @@
     {
         while (true)
         {
-            await game!.Render();
+            await game!.Render(countries);
             await InvokeAsync(StateHasChanged);
             await Task.Delay(16);
         }

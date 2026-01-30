@@ -1,10 +1,13 @@
 using GeograficWars.Components;
+using GeograficWars.Game;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
 	.AddInteractiveServerComponents();
+
+builder.Services.AddSingleton<RoomService>();
 
 var app = builder.Build();
 
