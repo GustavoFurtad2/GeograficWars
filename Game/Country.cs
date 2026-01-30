@@ -1,39 +1,26 @@
-﻿using System.Text.Json.Serialization;
-
-namespace GeograficWars.Game
+﻿namespace GeograficWars.Game
 {
     public class Country
     {
-        [JsonPropertyName("id")]
-        public string Id { get; private set; }
+        private readonly CountryData _countryData;
 
-        [JsonPropertyName("displayname")]
-        public string Name { get; private set; }
+        public string CountryId { get; private set; } = Guid.NewGuid().ToString();
 
-        [JsonPropertyName("continent")]
-        public string Continent { get; private set; }
+        public string OwnerId { get; private set; } = string.Empty;
 
-        [JsonPropertyName("path")]
-        public string ImagePath { get; private set; }
-
-        [JsonPropertyName("x")]
-        public double X { get; private set; }
-
-        [JsonPropertyName("y")]
-        public double Y { get; private set; }
-
-        [JsonPropertyName("scale")]
-        public double Scale { get; private set; }
-
-        public Country(string id, string name, string continent, string imagePath, double x, double y, double scale)
+        public Country(CountryData country)
         {
-            Id = id;
-            Name = name;
-            Continent = continent;
-            ImagePath = imagePath;
-            X = x;
-            Y = y;
-            Scale = scale;
+            _countryData = country;
+        }
+
+        public CountryData GetCountryData()
+        {
+            return _countryData;
+        }
+
+        public void SetOwner(string ownerId)
+        {
+            OwnerId = ownerId;
         }
     }
 }
