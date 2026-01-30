@@ -1,5 +1,6 @@
 ﻿@page "/game/{RoomId?}"
 @inject RoomService RoomService
+@inject NavigationManager Nav
 @rendermode InteractiveServer
 
 @using Excubo.Blazor.Canvas
@@ -36,6 +37,13 @@
     protected override void OnInitialized()
     {
         game = new Game();
+
+        if (RoomId == null)
+        {
+            RoomId = Guid.NewGuid().ToString();
+
+            Nav.NavigateTo($"/game/{RoomId}");
+        }
 
         room = RoomService.CreateRoom(RoomId, "room");
 
