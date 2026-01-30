@@ -45,7 +45,12 @@
             Nav.NavigateTo($"/game/{RoomId}");
         }
 
-        room = RoomService.CreateRoom(RoomId, "room");
+        room = RoomService.GetRoom(RoomId);
+
+        if (RoomService.GetRoom(RoomId) == null)
+        {
+            room = RoomService.CreateRoom(RoomId, "room");
+        }
 
         countriesManager = room.GetCountriesManager();
 
