@@ -11,14 +11,16 @@
 <PageTitle>Game</PageTitle>
 <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;"/>
 
-@foreach (Country country in countryManager.Countries)
+@foreach (Country country in game.GetCountriesManager().GetCountries())
 {
-    <img id="@country.Id" src="countries/@country.ImagePath" style="display: none;" />
+    CountryData countryData = @country.GetCountryData();
+
+    <img id="@countryData.CountryId" src="countries/@countryData.ImagePath" style="display: none;" />
 }
 
 @code {
 
-    private CountryManager countryManager = new CountryManager();
+    private List<Country>? countries;
     private Canvas? canvas;
     private Game? game;
 
@@ -27,7 +29,9 @@
 
     protected override void OnInitialized()
     {
-        countryManager.LoadCountries();
+        game = new Game();
+
+        countries = game.GetCountriesManager().GetCountries();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -36,8 +40,6 @@
         {
             return;
         }
-
-        game = new Game(countryManager);
 
         var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
 
