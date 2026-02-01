@@ -11,13 +11,30 @@
 @inject IJSRuntime JS
 
 <PageTitle>Game</PageTitle>
-<Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;"/>
 
-@foreach (Country country in countries)
+@if (!choosingPlayerName)
 {
-    CountryData countryData = @country.GetCountryData();
+    <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;" />
 
-    <img id="@countryData.CountryId" src="countries/@countryData.ImagePath" style="display: none;" />
+    @foreach (Country country in countries)
+    {
+        CountryData countryData = @country.GetCountryData();
+
+        <img id="@countryData.CountryId" src="countries/@countryData.ImagePath" style="display: none;" />
+    }
+}
+else
+{
+   <div>
+       <label class="text-muted">Escolha seu nome</label>
+       <input class="form-control" @bind-value=PlayerName/>
+       <br />
+       <div class="mt-3">
+           <button @onclick="ConfirmPlayerName" class="btn btn-outline-primary">
+               Confirmar
+            </button>
+       </div>
+   </div>
 }
 
 @code {
@@ -30,9 +47,13 @@
     private Game? game;
     private Room? room;
     private CountriesManager? countriesManager;
+    private bool choosingPlayerName = true;
+    private string? PlayerName{ get; set; }
 
-    private double canvasWidth;
-    private double canvasHeight;
+    private int canvasWidth;
+    private int canvasHeight;
+
+    private bool running = true;
 
     protected override void OnInitialized()
     {
@@ -59,29 +80,44 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (!firstRender)
+        if (firstRender)
         {
+            var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
+
+            canvasWidth = windowSize.Width;
+            canvasHeight = windowSize.Height;
+
+            await InvokeAsync(StateHasChanged);
+
             return;
         }
 
-        var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
+        if (!choosingPlayerName && canvas != null && game != null)
+        {
 
-        canvasWidth = windowSize.Width;
-        canvasHeight = windowSize.Height;
+            await game!.InitializeAsync(canvas!, new WindowSize {
+                Width = canvasWidth, 
+                Height = canvasHeight
+            });
 
-        await game!.InitializeAsync(canvas!, windowSize);
-
-        await RenderLoop();
+            _ = RenderLoop();
+        }
     }
 
     private async Task RenderLoop()
     {
-        while (true)
+        while (running)
         {
             await game!.Render(countries);
             await InvokeAsync(StateHasChanged);
             await Task.Delay(16);
         }
+    }
+
+    private void ConfirmPlayerName()
+    {
+        choosingPlayerName = false;
+        StateHasChanged();
     }
 
 }
