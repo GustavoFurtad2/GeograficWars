@@ -36,7 +36,7 @@ namespace GeograficWars.Rendering
             await using Batch2D batch = _ctx.CreateBatch();
 
             await RenderBackground(batch);
-            await RenderCountries(batch, countries);
+            await RenderCountries(batch, countries, 1);
         }
 
         private async Task RenderBackground(Batch2D batch)
@@ -45,22 +45,28 @@ namespace GeograficWars.Rendering
             await batch.FillRectAsync(0, 0, Width, Height);
         }
 
-        private async Task RenderCountries(Batch2D batch, List<Country> countries)
+        private async Task RenderCountries(Batch2D batch, List<Country> countries, double scale)
         {
 
             foreach (var country in countries)
             {
-                await DrawCountry(batch, country.GetCountryData());
+                await DrawCountry(batch, country.GetCountryData(), scale);
             }
         }
 
-        private async Task DrawCountry(Batch2D batch, CountryData country)
+        private async Task DrawCountry(Batch2D batch, CountryData country, double scale)
         {
-            await batch.SaveAsync();
-            await batch.ScaleAsync(country.Scale, country.Scale);
+            await batch.FillStyleAsync("green");
 
-            await batch.DrawImageAsync(country.CountryId, Width * country.X, Height * country.Y);
-            await batch.RestoreAsync();
+            foreach (var countryChunk in country.ChunksData)
+            { 
+                await batch.FillRectAsync(
+                    (Width * (country.X + countryChunk.X)) * scale, 
+                    (Height * (country.Y + countryChunk.Y)) * scale, 
+                    (Width * countryChunk.W) * scale, 
+                    (Height * countryChunk.H) * scale
+                );
+            }
         }
     }
 }

@@ -18,9 +18,9 @@
 
     @foreach (Country country in countries)
     {
-        CountryData countryData = @country.GetCountryData();
+        CountryData countryData = country.GetCountryData();
 
-        <img id="@countryData.CountryId" src="countries/@countryData.ImagePath" style="display: none;" />
+        //<img id="@countryData.CountryId" src="countries/@countryData.ImagePath" style="display: none;" />
     }
 }
 else
@@ -74,6 +74,8 @@ else
         }
 
         countriesManager = room.GetCountriesManager();
+
+        countriesManager.LoadCountries();
 
         countries = countriesManager.GetCountries();
     }

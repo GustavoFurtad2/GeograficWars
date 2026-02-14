@@ -30,7 +30,9 @@ namespace GeograficWars.Game
         {
             string json = File.ReadAllText("wwwroot/countries.json");
 
-            var countriesList = JsonSerializer.Deserialize<List<CountryData>>(json);
+            var options = new JsonSerializerOptions {IncludeFields = true};
+
+            var countriesList = JsonSerializer.Deserialize<List<CountryData>>(json, options);
 
             foreach (var countryData in countriesList)
             {
