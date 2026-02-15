@@ -15,13 +15,6 @@
 @if (!choosingPlayerName)
 {
     <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;" />
-
-    @foreach (Country country in countries)
-    {
-        CountryData countryData = country.GetCountryData();
-
-        //<img id="@countryData.CountryId" src="countries/@countryData.ImagePath" style="display: none;" />
-    }
 }
 else
 {
