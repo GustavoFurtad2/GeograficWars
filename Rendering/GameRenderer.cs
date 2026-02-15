@@ -54,15 +54,15 @@ namespace GeograficWars.Rendering
             }
         }
 
-        private async Task DrawCountry(Batch2D batch, CountryData country, double scale)
+        private async Task DrawCountry(Batch2D batch, CountryData countryData, double scale)
         {
             await batch.FillStyleAsync("green");
 
-            foreach (var countryChunk in country.ChunksData)
+            foreach (var countryChunk in countryData.ChunksData)
             { 
                 await batch.FillRectAsync(
-                    (Width * (country.X + countryChunk.X)) * scale, 
-                    (Height * (country.Y + countryChunk.Y)) * scale, 
+                    (Width * (countryData.X + countryChunk.X)) * scale, 
+                    (Height * (countryData.Y + countryChunk.Y)) * scale, 
                     (Width * countryChunk.W) * scale, 
                     (Height * countryChunk.H) * scale
                 );
