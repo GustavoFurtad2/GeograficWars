@@ -40,6 +40,7 @@ else
     private Game? game;
     private Room? room;
     private CountriesManager? countriesManager;
+    private WindowSize windowSize;
     private bool choosingPlayerName = true;
     private string? PlayerName{ get; set; }
 
@@ -77,12 +78,7 @@ else
     {
         if (firstRender)
         {
-            var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
-
-            canvasWidth = windowSize.Width;
-            canvasHeight = windowSize.Height;
-
-            await InvokeAsync(StateHasChanged);
+            await UpdateWindowSize();
 
             return;
         }
@@ -95,14 +91,29 @@ else
                 Height = canvasHeight
             });
 
-            _ = RenderLoop();
+            _ = GameLoop();
         }
     }
 
-    private async Task RenderLoop()
+    private async Task UpdateWindowSize()
+    {
+        var windowSize = await JS.InvokeAsync<WindowSize>("gameInterop.getWindowSize");
+
+        canvasWidth = windowSize.Width;
+        canvasHeight = windowSize.Height;
+
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task GameLoop()
     {
         while (running)
         {
+            await UpdateWindowSize();
+            await game!.Update(new WindowSize {
+                Width = canvasWidth,
+                Height = canvasHeight
+            });
             await game!.Render(countries);
             await InvokeAsync(StateHasChanged);
             await Task.Delay(16);

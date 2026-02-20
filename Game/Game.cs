@@ -23,6 +23,11 @@ namespace GeograficWars.Game
             await _renderer.InitializeAsync(canvas, size);
         }
 
+        public async Task Update(WindowSize size)
+        {
+            _renderer.UpdateCanvasSize(size);
+        }
+
         public async Task Render(List<Country> countries)
         {
             await _renderer.Render(countries);

@@ -25,6 +25,12 @@ namespace GeograficWars.Rendering
             _ctx = await _canvasRef.GetContext2DAsync();
         }
 
+        public void UpdateCanvasSize(WindowSize size)
+        {
+            Width = size.Width;
+            Height = size.Height;
+        }
+
         public async Task Render(List<Country> countries)
         {
 
