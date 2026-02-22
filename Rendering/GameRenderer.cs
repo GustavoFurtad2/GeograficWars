@@ -31,7 +31,7 @@ namespace GeograficWars.Rendering
             Height = size.Height;
         }
 
-        public async Task Render(List<Country> countries)
+        public async Task Render(Room room)
         {
 
             if (_ctx == null)
@@ -42,7 +42,8 @@ namespace GeograficWars.Rendering
             await using Batch2D batch = _ctx.CreateBatch();
 
             await RenderBackground(batch);
-            await RenderCountries(batch, countries, 1);
+            await RenderCountries(batch, room.GetCountriesManager().GetCountries(), 1);
+
         }
 
         private async Task RenderBackground(Batch2D batch)

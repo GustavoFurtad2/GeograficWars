@@ -28,9 +28,9 @@ namespace GeograficWars.Game
             _renderer.UpdateCanvasSize(size);
         }
 
-        public async Task Render(List<Country> countries)
+        public async Task Render(Room room)
         {
-            await _renderer.Render(countries);
+            await _renderer.Render(room);
         }
     }
 }

@@ -35,11 +35,9 @@ else
     [Parameter]
     public string? RoomId { get; set; }
 
-    private List<Country>? countries;
     private Canvas? canvas;
     private Game? game;
     private Room? room;
-    private CountriesManager? countriesManager;
     private WindowSize windowSize;
     private bool choosingPlayerName = true;
     private string? PlayerName{ get; set; }
@@ -67,11 +65,7 @@ else
             room = RoomService.CreateRoom(RoomId, "room");
         }
 
-        countriesManager = room.GetCountriesManager();
-
-        countriesManager.LoadCountries();
-
-        countries = countriesManager.GetCountries();
+        room.GetCountriesManager().LoadCountries();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -114,7 +108,7 @@ else
                 Width = canvasWidth,
                 Height = canvasHeight
             });
-            await game!.Render(countries);
+            await game!.Render(room);
             await InvokeAsync(StateHasChanged);
             await Task.Delay(16);
         }
