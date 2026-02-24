@@ -1,4 +1,6 @@
-﻿namespace GeograficWars.Game
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace GeograficWars.Game
 {
     public class Room
     {
@@ -20,9 +22,26 @@
             _countriesManager = new CountriesManager(_state);
         }
 
+        public void RoomStart()
+        {
+            _state.newGame();
+        }
+
+        public bool AddPlayer(string playerName)
+        {
+            _playersManager.CreatePlayer(playerName);
+
+            return true;
+        }
+
         public CountriesManager GetCountriesManager()
         {
             return _countriesManager;
+        }
+
+        public List<string> GetPlayersName()
+        {
+            return _state.Players.Values.Select(p => p.Name).ToList();
         }
 
     }
