@@ -117,6 +117,7 @@ else
     private void ConfirmPlayerName()
     {
         choosingPlayerName = false;
+        room.AddPlayer(PlayerName);
         StateHasChanged();
     }
 
