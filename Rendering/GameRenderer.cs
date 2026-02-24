@@ -3,6 +3,8 @@ using Excubo.Blazor.Canvas;
 using GeograficWars.Game;
 using System.Drawing;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using System.Net.NetworkInformation;
 
 namespace GeograficWars.Rendering
 {
@@ -41,9 +43,30 @@ namespace GeograficWars.Rendering
 
             await using Batch2D batch = _ctx.CreateBatch();
 
+
             await RenderBackground(batch);
             await RenderCountries(batch, room.GetCountriesManager().GetCountries(), 1);
 
+            await batch.FillStyleAsync("red");
+
+            int i = 0;
+
+            List<string> playersName = room.GetPlayersName();
+
+            double scale = Height / 1080f;
+
+            double textSize = 2;
+
+            await batch.ScaleAsync(scale * textSize, scale * textSize);
+
+            foreach (string name in playersName)
+            {
+                await batch.FillTextAsync(name, 0.05 * Width, (0.05 + (i * 0.02)) * Height);
+
+                i++;
+            }
+
+            await batch.ResetTransformAsync();
         }
 
         private async Task RenderBackground(Batch2D batch)
