@@ -22,9 +22,9 @@ namespace GeograficWars.Game
             _countriesManager = new CountriesManager(_state);
         }
 
-        public void RoomStart()
+        public void RoomStartGame()
         {
-            _state.newGame();
+            _state.initGame();
         }
 
         public bool AddPlayer(string playerName)

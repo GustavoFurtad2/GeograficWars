@@ -11,7 +11,7 @@ namespace GeograficWars.Game
 
         public string? CurrentPlayerTurnId { get; set; }
 
-        public void newGame()
+        public void initGame()
         {
             PlayersOrderID = Players.Keys.ToList();
 
