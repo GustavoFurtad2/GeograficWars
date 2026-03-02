@@ -8,7 +8,7 @@ namespace GeograficWars.Game
 
         public string RoomName { get; private set; } = string.Empty;
 
-        private GameState _state;
+        private GameState _gameState;
         private PlayersManager _playersManager;
         private CountriesManager _countriesManager;
 
@@ -17,14 +17,14 @@ namespace GeograficWars.Game
             RoomId = roomId;
             RoomName = roomName;
 
-            _state = new GameState();
-            _playersManager = new PlayersManager(_state);
-            _countriesManager = new CountriesManager(_state);
+            _gameState = new GameState();
+            _playersManager = new PlayersManager(_gameState);
+            _countriesManager = new CountriesManager(_gameState);
         }
 
         public void RoomStartGame()
         {
-            _state.initGame();
+            _gameState.initGame();
         }
 
         public bool AddPlayer(string playerName)
@@ -41,7 +41,7 @@ namespace GeograficWars.Game
 
         public List<string> GetPlayersName()
         {
-            return _state.Players.Values.Select(p => p.Name).ToList();
+            return _gameState.Players.Values.Select(p => p.Name).ToList();
         }
 
     }
