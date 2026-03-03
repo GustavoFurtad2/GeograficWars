@@ -12,11 +12,7 @@
 
 <PageTitle>Game</PageTitle>
 
-@if (!choosingPlayerName)
-{
-    <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;" />
-}
-else
+@if (choosingPlayerName)
 {
    <div id="EnterRoomScreen">
        <div id="Logo">
@@ -52,7 +48,60 @@ else
         #EnterRoomScreen input {
             width: 25%;
         }
-   </style>
+    </style>
+}
+else if (inLobby)
+{
+    <div id="LobbyScreen">
+        <div id="Logo">
+            <img src="full_logo.png" />
+        </div>
+        <div class="d-flex justify-content-center align-items-center" style="height: 80vh">
+            <div class="card bg-dark text-white border-primary rounded p-5 shadow" style="width: 35rem;">
+                <div id="LobbyBody" class="card-body">
+                    <h2 class="card-title">Lobby</h2>
+                    <p class="card-text">
+                        <div class="row border-primary rounded">
+                            <div class="col bg-dark d-flex flex-column justify-content-center align-items-center">
+                                <h3>Jogadores</h3>
+                                @if (PlayersName != null) {
+                                    @foreach (string playerName in PlayersName)
+                                    {
+                                        <br><h4>@playerName</h4>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        @if (isAdmin == true)
+                        {
+                            <div class="mt-3">
+                                <button @onclick="InitGame" class="btn btn-dark btn-outline-primary">
+                                    Iniciar Jogo
+                                </button>
+                            </div>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <style>
+        body {
+            background-color: dodgerblue;
+        }
+
+        #LobbyScreen, #LobbyBody {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+}
+else if (!choosingPlayerName && inGame)
+{
+    <Canvas @ref="canvas" width="@canvasWidth" height="@canvasHeight" style="display:block; margin:0; padding:0; border:0;" />
 }
 
 @code {
@@ -65,12 +114,19 @@ else
     private Room? room;
     private WindowSize windowSize;
     private bool choosingPlayerName = true;
+    private bool inLobby = true;
+    private bool inGame = false;
     private string? PlayerName{ get; set; }
+    private List<string>? PlayersName{ get; set; }
 
     private int canvasWidth;
     private int canvasHeight;
 
     private bool running = true;
+
+    private bool isAdmin = false;
+
+    private string? PlayerId { get; set; }
 
     protected override void OnInitialized()
     {
@@ -90,6 +146,8 @@ else
             room = RoomService.CreateRoom(RoomId, "room");
         }
 
+        UpdateGameState();
+
         room.GetCountriesManager().LoadCountries();
     }
 
@@ -98,6 +156,8 @@ else
         if (firstRender)
         {
             await UpdateWindowSize();
+
+            _ = GameLoop();
 
             return;
         }
@@ -109,8 +169,6 @@ else
                 Width = canvasWidth, 
                 Height = canvasHeight
             });
-
-            _ = GameLoop();
         }
     }
 
@@ -128,6 +186,8 @@ else
     {
         while (running)
         {
+            PlayersName = room?.GetPlayersName();
+            UpdateGameState();
             await UpdateWindowSize();
             await game!.Update(new WindowSize {
                 Width = canvasWidth,
@@ -139,11 +199,26 @@ else
         }
     }
 
+    private void UpdateGameState()
+    {
+
+        inLobby = room.State == RoomState.Lobby;
+        inGame = room.State == RoomState.InGame;
+    }
+
     private void ConfirmPlayerName()
     {
         choosingPlayerName = false;
-        room.AddPlayer(PlayerName);
+        PlayerId = RoomService.JoinRoom(room?.RoomId, PlayerName);
+
+        isAdmin = PlayerId == room.AdminID;
+
         StateHasChanged();
+    }
+
+    private void InitGame()
+    {
+        room.StartGame(PlayerId);
     }
 
 }
