@@ -12,6 +12,10 @@ namespace GeograficWars.Game
         private PlayersManager _playersManager;
         private CountriesManager _countriesManager;
 
+        public RoomState State { get; set; } = RoomState.Lobby;
+
+        public string AdminID { get; private set; }
+
         public Room(string roomId, string roomName)
         {
             RoomId = roomId;
@@ -22,16 +26,26 @@ namespace GeograficWars.Game
             _countriesManager = new CountriesManager(_gameState);
         }
 
-        public void RoomStartGame()
+        public void StartGame(string playerId)
         {
-            _gameState.initGame();
+            if (playerId == AdminID)
+            {
+                State = RoomState.InGame;
+
+                _gameState.initGame();
+            }
         }
 
-        public bool AddPlayer(string playerName)
+        public string AddPlayer(string playerName)
         {
-            _playersManager.CreatePlayer(playerName);
+            Player player = _playersManager.CreatePlayer(playerName);
 
-            return true;
+            if (_gameState.Players.Count == 1)
+            {
+                AdminID = player.Id;
+            }
+
+            return player.Id;
         }
 
         public CountriesManager GetCountriesManager()
@@ -42,6 +56,11 @@ namespace GeograficWars.Game
         public List<string> GetPlayersName()
         {
             return _gameState.Players.Values.Select(p => p.Name).ToList();
+        }
+
+        public int GetNumbersOfPlayer()
+        {
+            return _gameState.Players.Count;
         }
 
     }

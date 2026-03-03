@@ -17,13 +17,13 @@
         public void RemoveRoom(string roomId)
             => _rooms.Remove(roomId);
 
-        public bool JoinRoom(string roomId, string playerName)
+        public string JoinRoom(string roomId, string playerName)
         {
             Room room = GetRoom(roomId);
             
             if (room == null)
             {
-                return false;
+                return null;
             }
             
             return room.AddPlayer(playerName);
